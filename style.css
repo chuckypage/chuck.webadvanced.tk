@@ -1,0 +1,14 @@
+body {
+    background-color: yellow;
+    color: red;
+    
+}
+
+.cursor {
+    width: 270px;
+  	height: 240px;
+  	position: absolute;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-image: url(http://vignette4.wikia.nocookie.net/inciclopedia/images/a/a5/X.png);
+}
