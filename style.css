@@ -20,7 +20,7 @@ body {
     position: absolute;
    border: 1px solid red;
    width: 10vw;
-   height: 20vh;
+   height: 5vh;
    transition:0s 180s;
    
 }
@@ -36,8 +36,8 @@ body {
     margin-left: 50vw;
     margin-top: 10vh;
    border: 1px solid red;
-   width: 10vw;
-   height: 20vh;
+   width: 20vw;
+   height: 5vh;
     transition:0s 180s;
 }
 
@@ -61,4 +61,11 @@ body {
 statementthree:hover {
     opacity: 1;
     transition: 0s;
+}
+
+.statementfour {
+    border: 1px solid red;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
 }
