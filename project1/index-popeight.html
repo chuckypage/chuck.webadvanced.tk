@@ -6,10 +6,26 @@
 <style>
 body {
 	 font-size: 100px;
+	 color: yellow;
 	 background-color: blue;
+	 text-shadow:
+    -1px -1px 0 red,
+    1px -1px 0 red,
+    -1px 1px 0 red,
+    1px 1px 0 red;
 }
 
 
 
 </style>
+
+
+<body>
+<script type="text/javascript">
+document.write ('<p> <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script>
+</body>
 </html>

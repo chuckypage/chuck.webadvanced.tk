@@ -28,10 +28,10 @@ return false;
 		popup('index-popfour.html', 'ad4', 400, 400);
 		popup('index-popfive.html', 'ad5', 600, 600);
 		popup('index-popsix.html', 'ad6', 800, 800);
-		popup('index-popseven.html', 'ad7', 30, 300);
-		popup('index-popeight.html', 'ad8', 10, 300);
+		popup('index-popseven.html', 'ad7', 30, 1000);
+		popup('index-popeight.html', 'ad8', 10, 900);
 		popup('index-popnine.html', 'ad9', 200, 80);
-		popup('index-popten.html', 'ad10', 30, 300);
+		popup('index-popten.html', 'ad10', 30, 450);
 		
 	
 	});
