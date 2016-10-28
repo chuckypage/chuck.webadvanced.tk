@@ -1,0 +1,46 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+iframe {
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+	border:0;
+	filter: saturate (250%);
+}
+
+#mainnav {
+	/*background-color: yellow;*/
+}
+
+.bbc {
+	filter: saturate(300%) contrast(300%);	
+
+}
+
+.huff {
+	filter: saturate(300%) contrast(300%);	
+
+}
+
+#container {
+	
+	z-index: 10000;
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
+}
+#videoElement {
+	position: absolute;
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+    z-index: 10000;
+}

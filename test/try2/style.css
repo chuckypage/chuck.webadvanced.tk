@@ -1,0 +1,15 @@
+body {
+	background-color: black;
+	filter: saturate (200%);
+
+
+.cursor {
+  	z-index: 20;
+    cursor: none;
+    width: 100px;
+  	height: 100px;
+  	position: absolute;
+    background-size: 50px 30px;
+    background-repeat: no-repeat;
+    background-image: url(http://vignette4.wikia.nocookie.net/terraria/images/a/ac/Ojo_Errante.gif/revision/latest?cb=20140113005935&path-prefix=es);
+}
