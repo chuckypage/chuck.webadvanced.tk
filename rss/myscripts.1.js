@@ -46,7 +46,7 @@ var imgcounter = 0;
       $(function () {
         //This overwrites whatever is in #content, so we should find another container for our second feed..
         //going to pull from Craigslist, as an example
-        var statement = "select * from feed where url='https://newyork.craigslist.org/search/fua?format=rss'";
+        var statement = "select * from feed where url='https://newyork.craigslist.org/search/gra?format=rss'";
         $.queryYQL(statement, "json", undefined, function (data) {
           // do something with "data".
           console.log(data);
