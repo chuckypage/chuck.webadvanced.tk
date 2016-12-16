@@ -36,10 +36,37 @@
     box-shadow: 8px 8px 5px black
           
         }
+        
+        .active{
+        z-index:99;
+    }
       
     </style>
-    <!--https://developer.yahoo.com/yql/-->
+    
+    <script>
+    function slideSwitch() {
+        var $active = $('div#slideshow IMG.active');
+        var $next = $active.next();    
 
+        $next.addClass('active');
+
+        $active.removeClass('active');
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+</script>
+    <!--https://developer.yahoo.com/yql/-->
+<div id="slideshow">
+    <img src="obit1.jpg" style="position:absolute;" class="active" />
+    <img src="obit2.jpg" style="position:absolute;" />
+    <img src="obit3.jpg" style="position:absolute;" />
+    <img src="obit4.jpg" style="position:absolute;" />
+    <img src="obit5.jpg" style="position:absolute;" />
+    <img src="obit6.jpg" style="position:absolute;" />
+    <img src="obit7.jpg" style="position:absolute;" />
+</div>
     <div id="tributes">
       
     </div>
