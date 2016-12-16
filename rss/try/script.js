@@ -14,7 +14,7 @@
             console.log(data.query.results.item[i].title[0]);
             //$("#tributes").append("<p>" + data.query.results.item[i].title + "</p>");
             // var toRead = data.query.results.item[i].title;
-          var  myString = new SpeechSynthesisUtterance (data.query.results.item[i].title + ".   ");
+          var  myString = new SpeechSynthesisUtterance (myString + data.query.results.item[i].title + ".   ");
               window.speechSynthesis.speak(myString);
            
            
