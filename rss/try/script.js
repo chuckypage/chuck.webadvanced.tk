@@ -16,15 +16,18 @@
             // var toRead = data.query.results.item[i].title;
             // myString = myString + data.query.results.item[i].title + ".  " + data.query.results.item[i].description + ".   ";
             
-            
-           var  myString = new SpeechSynthesisUtterance (data.query.results.item[i].title + ".   " + data.query.results.item[i].description + ".   ");
+            var msg = new SpeechSynthesisUtterance('I. am. a. 1. Liner! I am a 1 liner! I am a 1 liner! I am a 1 liner! I am a 1 liner! I am a 1 liner! I am a 1 liner! I am a 1 liner! I am a 1 liner! I am a 1 liner! I am a 1 liner! I am a 1 liner! I am a 1 liner!');
+            window.speechSynthesis.speak(msg);
+        //   var  myString = new SpeechSynthesisUtterance (data.query.results.item[i].title + ".   " + data.query.results.item[i].description + ".   ");
             var voices = window.speechSynthesis.getVoices(); 
                 myString.voice = voices[10];
                 myString.voiceURI = 'Deranged';
                 myString.volume = 1; // 0 to 1
-                myString.rate = 1; // 0.1 to 10
+                myString.rate = .1; // 0.1 to 10
                 myString.pitch = -5; //0 to 2
-               window.speechSynthesis.speak(myString);
+        msg.onend = function(e) {
+        console.log('Finished in ' + event.elapsedTime + ' seconds.');
+        };      
                
             
           
