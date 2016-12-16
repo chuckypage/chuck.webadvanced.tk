@@ -27,7 +27,7 @@
           }
       setTimeout(function(){ 
             console.log(myString);
-                responsiveVoice.speak(myString,"US English Male", {pitch: 0}, {rate: 0});
+                responsiveVoice.speak(myString,"US English Female", {pitch: 0}, {rate: 0});
               }, 500);
               
           
