@@ -7,7 +7,7 @@
   <body>
     <style>
       body {
-        background-color: white;
+        background-color: black;
         color: black;
         font-size: 100%;
         font-family: serif ;
@@ -15,7 +15,7 @@
       
       #tributes{
         color: red;
-       position: absolute;
+      
       }
       
      
@@ -37,36 +37,55 @@
           
         }
         
-        .active{
-        z-index:99;
-    }
+ img {
+   margin: 0;
+    background: yellow;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+   
+ }
+
+   /*display: block;*/
+   /* margin-left: auto;*/
+   /* margin-right: auto*/
+     /*margin-left: 600px;*/
+   /*position: absolute;*/
+ 
+   /*height: 100%; */
+   /*border: .2vw black solid;*/
+   
+   
+ }
+#exampleSlider {
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+  border: 1px black solid;
+  max-height: 250px; 
+  overflow: hidden; 
+  list-style: none; 
+  padding: 0; 
+ 
+  
+}
       
     </style>
     
-    <script>
-    function slideSwitch() {
-        var $active = $('div#slideshow IMG.active');
-        var $next = $active.next();    
+ 
 
-        $next.addClass('active');
+   <ul id="exampleSlider"> 
+    <li><img src="obit1.jpg" alt="" /></li>
+    <li><img src="obit2.jpg" alt="" /></li>
+    <li><img src="obit3.jpg" alt="" /></li>
+    <li><img src="obit4.jpg" alt="" /></li>
+    <li><img src="obit5.jpg" alt="" /></li>
+    <li><img src="obit6.jpg" alt="" /></li>
+    <li><img src="obit7.jpg" alt="" /></li>
+    </ul>
 
-        $active.removeClass('active');
-    }
-
-    $(function() {
-        setInterval( "slideSwitch()", 5000 );
-    });
-</script>
-    <!--https://developer.yahoo.com/yql/-->
-<div id="slideshow">
-    <img src="obit1.jpg" style="position:absolute;" class="active" />
-    <img src="obit2.jpg" style="position:absolute;" />
-    <img src="obit3.jpg" style="position:absolute;" />
-    <img src="obit4.jpg" style="position:absolute;" />
-    <img src="obit5.jpg" style="position:absolute;" />
-    <img src="obit6.jpg" style="position:absolute;" />
-    <img src="obit7.jpg" style="position:absolute;" />
-</div>
     <div id="tributes">
       
     </div>
