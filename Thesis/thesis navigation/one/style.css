@@ -1,0 +1,59 @@
+body {
+	margin: -1px;
+	overflow: hidden;
+
+}
+
+.bg {
+	height: 100%;
+	z-index: -1;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+	background-image: url("car.jpg");
+
+}
+
+
+.forward {
+	position: absolute;
+	/*box-shadow: 0px 0px 6px white;*/
+  	height:50%;
+  	margin-right: 40px;
+  	margin-left: 92vw;
+  	animation-iteration-count:infinite;
+  	animation-name: rotate;
+  	animation-duration: 4s;
+  	animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {transform: rotateY( 0deg );}
+    to {transform: rotateY( -360deg );}
+}
+
+.back {
+	position: absolute;
+	/*box-shadow: 0px 0px 6px white;*/
+  	height:50%;
+  	margin-right: 40px;
+  	margin-left: 0vw;
+  	animation-iteration-count:infinite;
+  	animation-name: rotate;
+  	animation-duration: 4s;
+  	animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {transform: rotateY( 0deg );}
+    to {transform: rotateY( 360deg );}
+}
+
+/*div.back::@-webkit-keyframes rotate {
+    from {transform: rotateY( 0deg );}
+    to {transform: rotateY( 360deg );}
+} 
+
+div.forward::@-webkit-keyframes rotate {
+	from {transform: rotateY( 0deg );}
+    to {transform: rotateY( 360deg );}
+}*/
